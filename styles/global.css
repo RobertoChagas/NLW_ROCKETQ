@@ -18,8 +18,8 @@ html {
 
   --grey-dark: #4d5e77;
   --grey-blue: #a1b2cd;
-  --grey-medium: #d3d9e2;
   --grey-light: #e5eaf1;
+  --grey-medium: #eaecf2;
 
   /* 1rem = 16px tamanho padrã do navegador (user agent) = 100% */
   font-size: 62.5%;
@@ -92,7 +92,8 @@ button:hover,
   filter: brightness(1.2);
 }
 
-button>img .button>img {
+button>img,
+.button>img {
   margin-right: 1rem;
   width: 2.0rem;
 }
@@ -103,6 +104,20 @@ button.outlined,
   color: var(--blue);
   border: 0.2rem solid var(--blue)
 }
+
+button.red,
+.button.red{
+  background: var(--red);
+  color: var(--white);
+}
+
+button.grey,
+.button.grey{
+  background: var(--grey-light);
+  columns: var(--grey-dark);
+}
+
+/**HEADER**/
 
 .content header {
   width: 80%;
